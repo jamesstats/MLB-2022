@@ -9,6 +9,6 @@ strikes<-bbk_tables[[20]]
 colnames(strikes)<-c('Rank','Player','Strikeouts')
 view(strikes) 
 bbkk<-toJSON(strikes)
-write(bbkk, "srikeouts.json") 
+write(bbkk, "srikeouts.json",pretty=TRUE, auto_unbox=FALSE)  
 
 write(bbkk,paste0('data/strikes.json',Sys.Date(),'_Strike','.json'))    
