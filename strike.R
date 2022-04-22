@@ -1,7 +1,7 @@
 library(tidyverse)
 library(rvest)
 library(janitor)  
-library(rjson)
+library(jsonlite)
 bbk<-"https://www.baseball-reference.com/leagues/majors/2022-batting-leaders.shtml"
 bbk_html<-read_html(bbk) 
 bbk_tables <-bbk_html%>%html_table(fill=TRUE)
