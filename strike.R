@@ -7,4 +7,4 @@ bbk_tables <-bbk_html%>%html_table(fill=TRUE)
 strikes<-bbk_tables[[20]] 
 colnames(strikes)<-c('Rank','Player','Strikeouts')   
 
-write(strikes,paste0('data/',Sys.Date(),'_Strike','.csv'))    
+write_csv(strikes,paste0('data/',Sys.Date(),'_Strike','.csv'))    
