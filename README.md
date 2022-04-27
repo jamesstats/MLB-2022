@@ -1,2 +1,2 @@
-# MLB-2022
-Top players with high strikeouts
+## Major League Baseball 2022 
+Strikeouts data updated daily the mornng after all games have been played. 
