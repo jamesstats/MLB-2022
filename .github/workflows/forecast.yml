@@ -1,8 +1,8 @@
 name: ko forecast for 2022
 
 on:
-    push:
-      branch:     
+ schedule:
+    - cron: '0 7 * * *'     
     
 jobs: 
   autoscrape: 
